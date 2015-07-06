@@ -1,5 +1,6 @@
 osx_image: beta-xcode6.3
 language: objective-c
+before_install: gem install slather -N #-N: disable documentation generation
 script:
   - export GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
   - export GCC_GENERATE_TEST_COVERAGE_FILES=YES
