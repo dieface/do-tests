@@ -2,6 +2,7 @@ machine:
   xcode:
     version: "6.3.1"
 test:
-  - xctool -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  override:
+    - xctool -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+    - xctool test -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
