@@ -1,3 +1,4 @@
+osx_image: beta-xcode6.3
 language: objective-c
 script:
   - xctool -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
