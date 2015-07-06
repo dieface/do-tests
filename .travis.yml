@@ -3,6 +3,7 @@ language: objective-c
 script:
   - xctool -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xctool test -project DoTests.xcodeproj -scheme DoTestsTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - export GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+  - export GCC_GENERATE_TEST_COVERAGE_FILES=YES
 before_install: gem install cocoapods xcpretty obcd slather -N
 after_success: slather
