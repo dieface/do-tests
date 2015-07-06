@@ -1,7 +1,7 @@
 machine:
   xcode:
     version: "6.3.1"
-
-XCODE_PROJECT: DoTests.xcodeproj
-XCODE_SCHEME: DoTestsTests
+  environment:
+    XCODE_PROJECT: DoTests.xcodeproj
+    XCODE_SCHEME: DoTestsTests
 
