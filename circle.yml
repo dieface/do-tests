@@ -4,4 +4,7 @@ machine:
   environment:
     XCODE_PROJECT: DoTests.xcodeproj
     XCODE_SCHEME: DoTestsTests
+test:
+  override:
+    - xctool
 
